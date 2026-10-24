@@ -33,4 +33,8 @@ python3 pricing_sync.py --sync
 
 `--check` detects Langfuse pricing drift and exits with code `2` when drift exists.
 
-`--
+`--sync` creates or updates managed Langfuse model definitions.
+
+Mappings are explicit; model aliases are never inferred.
+
+Managed Langfuse definitions use `TOKENS` and the `openrouter-sync:` prefix.
